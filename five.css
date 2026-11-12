@@ -1,0 +1,61 @@
+  :root {
+            --main-color: #dc3545;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand span {
+            color: var(--main-color);
+        }
+        .btn-brand {
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            transition: 0.3s ease;
+        }
+        .btn-brand:hover {
+            background-color: #bd2130;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--main-color);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .custom-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 16px;
+        }
+        .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+        .support-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .text-warning {
+            color: #ffc107 !important;
+        }
+        .star-rating span {
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+        .star-rating span:hover,
+        .star-rating span:hover ~ span,
+        .star-rating span.active,
+        .star-rating span.active ~ span {
+            color: #ffc107;
+        }
